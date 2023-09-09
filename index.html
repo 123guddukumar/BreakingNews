@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Channel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-main container flex">
+            <a href="#" onclick="reload()" class="channel-logo">
+                <img src="https://logodix.com/logo/2097901.png" alt="Channel Logo">
+            </a>
+
+            <div class="nav-link">
+                <ul class="flex">
+                    <li class="link-hover nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPl</li>
+                    <li class="link-hover nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="link-hover nav-item" id="politics" onclick="onNavItemClick('politics')">Politices</li>
+                    <li class="link-hover nav-item" id="technologi" onclick="onNavItemClick('technologi')">Technologi</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input type="text" id="search-text" class="news-input" placeholder="e.g Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="cards-container">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news img" id="news-img">
+                </div>
+                <div class="card-containt">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h5 class="news-source" id="news-source">End Goofle 26/04/2022</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea dolores numquam impedit est aperiam ipsam debitis sunt accusamus repellat? Fugiat quisquam distinctio debitis veniam eveniet ut saepe? Voluptatem temporibus aspernatur vitae voluptate, delectus ea voluptatibus velit commodi consectetur ex facilis ab, aut, debitis deleniti perspiciatis itaque voluptates. Error, accusamus sequi?
+                    </p>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <template id="template-container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news img" id="news-img">
+            </div>
+            <div class="card-containt">
+                <h3 id="news-title">This is the Title</h3>
+                <h5 class="news-source" id="news-source">End Goofle 26/04/2022</h5>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea dolores numquam impedit est aperiam ipsam debitis sunt accusamus repellat? Fugiat quisquam distinctio debitis veniam eveniet ut saepe? Voluptatem temporibus aspernatur vitae voluptate, delectus ea voluptatibus velit commodi consectetur ex facilis ab, aut, debitis deleniti perspiciatis itaque voluptates. Error, accusamus sequi?
+                </p>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
